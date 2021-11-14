@@ -1,0 +1,12 @@
+{
+  "name": "ide-lib-base-component",
+  "debugName": "lib-base-component",
+  "className": "BaseComponent",
+  "templater": "https://github.com/common-ide/ide-tpl-component-for-monorepo.git",
+  "repo": "https://github.com/common-ide/ide-kit/tree/master/packages/ide-lib-base-component",
+  "idPrefix": "slbc",
+  "version": "1.0.0",
+  "description": "base component for ide",
+  "author": "boycgit",
+  "libName": "ideBaseComponent"
+}
