@@ -1,0 +1,17 @@
+{
+    "extends": "./tsconfig.build.json",
+    "compilerOptions": {
+        "baseUrl": "./packages",
+        "paths": {
+            "ette": [
+                "ette/src"
+            ],
+            "ette-proxy": [
+                "ette-proxy/src"
+            ],
+            "ette-router": [
+                "ette-router/src"
+            ]
+        }
+    }
+}
