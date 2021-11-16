@@ -5,5 +5,6 @@ module.exports = {
     "templater": "https://github.com/common-ide/ide-tpl-component-for-monorepo.git",
     "idPrefix": "slu",
     "libName": "ideLibUtils",
+    configFileName: 'tsconfig.build.json',
     "externals": []
 }

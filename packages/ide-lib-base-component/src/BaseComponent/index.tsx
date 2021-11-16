@@ -7,7 +7,6 @@ import React, {
 } from 'react';
 import Application, { Client } from 'ette';
 import { reaction } from 'mobx';
-// import { useDisposable } from 'mobx-react-lite';
 import { ThemeProvider } from 'styled-components';
 import {
   getValueByPath,

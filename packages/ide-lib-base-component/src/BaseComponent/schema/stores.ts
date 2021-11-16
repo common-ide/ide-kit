@@ -17,6 +17,7 @@ export function getSubStoresAssigner<T extends TAnyMSTModel>(stores: T, subAppNa
     const assigners: Record<string, (store: TAnyMSTModel) => any> = {};
     subAppNames.forEach((name: string) => {
         assigners[`set${capitalize(name)}`] = (subStoreInstance: TAnyMSTModel) => {
+            // @ts-ignore
             stores[name] = cast(subStoreInstance);
         };
     });
