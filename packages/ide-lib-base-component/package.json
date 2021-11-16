@@ -1,7 +1,7 @@
 {
-  "name": "ide-lib-utils",
+  "name": "ide-lib-base-component",
   "version": "1.0.0",
-  "description": "[lib] utils for ide",
+  "description": "base component for ide",
   "main": "dist/index.umd.js",
   "module": "dist/index.umd.js",
   "idebug": "src/index.tsx",
@@ -10,7 +10,7 @@
   "homepage": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/common-ide/ide-kit/tree/master/packages/ide-lib-utils"
+    "url": "https://github.com/common-ide/ide-kit/tree/master/packages/ide-lib-base-component"
   },
   "scripts": {
     "dev": "ide-cli dev",
@@ -27,25 +27,9 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
-    "aa-loader": "0.1.x",
-    "advance-json-merge": "1.x.x",
-    "debug": "^4.1.0",
-    "mitt": "^1.2.0",
-    "ts-debounce-throttle": "1.x.x"
+    "@rehooks/component-size": "^1.0.3"
   },
   "files": [
     "dist"
-  ],
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  ]
 }

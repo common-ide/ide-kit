@@ -3,14 +3,11 @@
     "compilerOptions": {
         "baseUrl": "./packages",
         "paths": {
-            "ette": [
-                "ette/src"
+            "ide-lib-utils": [
+                "ide-lib-utils/src"
             ],
-            "ette-proxy": [
-                "ette-proxy/src"
-            ],
-            "ette-router": [
-                "ette-router/src"
+            "ide-lib-base-component": [
+                "ide-lib-base-component/src"
             ]
         }
     }

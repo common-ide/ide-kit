@@ -4,24 +4,11 @@ const { merge } = require('webpack-merge');
 
 
 const COMMON_EXTERNALS = {
-  ette: {
-    commonjs: 'ette',
-    commonjs2: 'ette',
-    amd: 'ette',
-    root: 'Ette',
-  },
-  'ette-router': {
-    commonjs: 'ette-router',
-    commonjs2: 'ette-router',
-    amd: 'ette-router',
-    root: 'etteRouter',
-  },
-  'ette-proxy': {
-    commonjs: 'ette-proxy',
-    commonjs2: 'ette-proxy',
-    amd: 'ette-proxy',
-    root: 'etteProxy',
-  },
+  ette: 'Ette',
+  'ette-router': 'etteRouter',
+  'ette-proxy': 'etteProxy',
+  react: 'React',
+  'react-dom': 'ReactDOM',
   // react: {
   //   commonjs: 'react',
   //   commonjs2: 'react',
@@ -34,32 +21,33 @@ const COMMON_EXTERNALS = {
   //   amd: 'react-dom',
   //   root: 'ReactDOM',
   // },
+  // 'react-is': {
+  //   commonjs: 'react-is',
+  //   commonjs2: 'react-is',
+  //   amd: 'react-is',
+  //   root: 'ReactIs',
+  // },
   antd: 'antd',
-  // mobx: 'mobx',
+  mobx: 'mobx',
   // 'mobx-react': {
   //   commonjs: 'mobx-react',
   //   commonjs2: 'mobx-react',
   //   amd: 'mobx-react',
   //   root: 'mobxReact',
   // },
-  // 'mobx-react-lite': {
-  //   commonjs: 'mobx-react-lite',
-  //   commonjs2: 'mobx-react-lite',
-  //   amd: 'mobx-react-lite',
-  //   root: 'mobxReact',
-  // },
-  // 'mobx-state-tree': {
-  //   commonjs: 'mobx-state-tree',
-  //   commonjs2: 'mobx-state-tree',
-  //   amd: 'mobx-state-tree',
-  //   root: 'mobxStateTree',
-  // },
-  // 'styled-components': {
-  //   commonjs: 'styled-components',
-  //   commonjs2: 'styled-components',
-  //   amd: 'styled-components',
-  //   root: 'styled',
-  // },
+  'mobx-react-lite': {
+    commonjs: 'mobx-react-lite',
+    commonjs2: 'mobx-react-lite',
+    amd: 'mobx-react-lite',
+    root: 'mobxReactLite',
+  },
+  'mobx-state-tree': {
+    commonjs: 'mobx-state-tree',
+    commonjs2: 'mobx-state-tree',
+    amd: 'mobx-state-tree',
+    root: 'mobxStateTree',
+  },
+  'styled-components': 'styled',
   // 'ide-lib-utils': {
   //   commonjs: 'ide-lib-utils',
   //   commonjs2: 'ide-lib-utils',
