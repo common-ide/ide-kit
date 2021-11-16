@@ -6,6 +6,7 @@
     "repo": "https://github.com/one-gourd/ide-lib-utils.git",
     "idPrefix": "slu",
     "version": "1.0.0",
+    "configFileName": "tsconfig.build.json",
     "description": "[lib] utils for ide",
     "author": "boycgit",
     "libName": "ideLibUtils"

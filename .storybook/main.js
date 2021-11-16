@@ -94,6 +94,7 @@ const COMMON_EXTERNALS = {
 
 // Export a function. Accept the base config as the only param.
 module.exports = {
+  addons: ['@storybook/addon-essentials'],
   // core: {
   //   builder: 'webpack5',
   // },
@@ -119,7 +120,7 @@ module.exports = {
 
     // 获取原来定义的变量
     let definePluginId = config.plugins.findIndex(
-      (p) => p.constructor.name === 'DefinePlugin'
+      (p) => p.constructor.name === 'DefinePlugin',
     );
     const originPlugin = config.plugins[definePluginId];
 

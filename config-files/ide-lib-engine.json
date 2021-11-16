@@ -1,0 +1,13 @@
+{
+    "name": "ide-lib-engine",
+    "debugName": "lib-engine",
+    "className": "LibEngine",
+    "templater": "https://github.com/common-ide/ide-tpl-component-for-monorepo.git",
+    "repo": "https://github.com/common-ide/ide-kit/tree/master/packages/ide-lib-engine",
+    "idPrefix": "sle",
+    "version": "1.0.0",
+    "description": "[lib] engine for ide",
+    "configFileName": "tsconfig.build.json",
+    "author": "boycgit",
+    "libName": "ideLibEngine"
+}
