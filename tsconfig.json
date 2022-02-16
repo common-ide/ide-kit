@@ -8,6 +8,9 @@
             ],
             "ide-lib-base-component": [
                 "ide-lib-base-component/src"
+            ],
+            "ide-lib-engine": [
+              "ide-lib-engine/src"
             ]
         }
     }

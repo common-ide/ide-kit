@@ -1,7 +1,5 @@
 import React, { useState, useCallback, useRef } from 'react';
 
-import { storiesOf } from '@storybook/react';
-
 import { Collapse, Button, Input } from 'antd';
 import {
   based,
@@ -16,7 +14,6 @@ import useComponentSize from '@rehooks/component-size';
 const Panel = Collapse.Panel;
 
 testProxy();
-
 
 interface IProps extends IBaseComponentProps {
   /**
@@ -154,12 +151,6 @@ const AbsoluteDemo = (props: IProps) => {
 };
 
 
-
-export default {
-  component: based,
-  title: 'Components/BaseComponent',
-}
-
 // 简单展示封装，普通组件
 export const 简单包装 = () => <Wrapped {...props} cHeight="300" onClick={onClick} />;
 
@@ -215,5 +206,10 @@ export const 测试ClickOutside功能 = () => <WrappedWithClickOutside
 
 // 带有绝对定位 modal 的 click Outside 检测
 export const 测试绝对定位ClickOutside = () => <AbsoluteDemo {...props} />
+
+export default {
+  component: based,
+  title: 'Components/BaseComponent',
+}
 
 

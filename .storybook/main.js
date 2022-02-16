@@ -1,96 +1,4 @@
-const path = require('path');
-const webpack = require('webpack');
-const { merge } = require('webpack-merge');
 
-
-const COMMON_EXTERNALS = {
-  ette: 'Ette',
-  'ette-router': 'etteRouter',
-  'ette-proxy': 'etteProxy',
-  react: 'React',
-  'react-dom': 'ReactDOM',
-  // react: {
-  //   commonjs: 'react',
-  //   commonjs2: 'react',
-  //   amd: 'react',
-  //   root: 'React',
-  // },
-  // 'react-dom': {
-  //   commonjs: 'react-dom',
-  //   commonjs2: 'react-dom',
-  //   amd: 'react-dom',
-  //   root: 'ReactDOM',
-  // },
-  // 'react-is': {
-  //   commonjs: 'react-is',
-  //   commonjs2: 'react-is',
-  //   amd: 'react-is',
-  //   root: 'ReactIs',
-  // },
-  antd: 'antd',
-  mobx: 'mobx',
-  // 'mobx-react': {
-  //   commonjs: 'mobx-react',
-  //   commonjs2: 'mobx-react',
-  //   amd: 'mobx-react',
-  //   root: 'mobxReact',
-  // },
-  'mobx-react-lite': {
-    commonjs: 'mobx-react-lite',
-    commonjs2: 'mobx-react-lite',
-    amd: 'mobx-react-lite',
-    root: 'mobxReactLite',
-  },
-  'mobx-state-tree': {
-    commonjs: 'mobx-state-tree',
-    commonjs2: 'mobx-state-tree',
-    amd: 'mobx-state-tree',
-    root: 'mobxStateTree',
-  },
-  'styled-components': 'styled',
-  // 'ide-lib-utils': {
-  //   commonjs: 'ide-lib-utils',
-  //   commonjs2: 'ide-lib-utils',
-  //   amd: 'ide-lib-utils',
-  //   root: 'ideLibUtils',
-  // },
-  // 'ide-model-utils': {
-  //   commonjs: 'ide-model-utils',
-  //   commonjs2: 'ide-model-utils',
-  //   amd: 'ide-model-utils',
-  //   root: 'ideModelUtils',
-  // },
-  // 'ide-lib-base-component': {
-  //   commonjs: 'ide-lib-base-component',
-  //   commonjs2: 'ide-lib-base-component',
-  //   amd: 'ide-lib-base-component',
-  //   root: 'ideBaseComponent',
-  // },
-  // 'ide-lib-engine': {
-  //   commonjs: 'ide-lib-engine',
-  //   commonjs2: 'ide-lib-engine',
-  //   amd: 'ide-lib-engine',
-  //   root: 'ideLibEngine',
-  // },
-  'react-dnd': {
-    commonjs: 'react-dnd',
-    commonjs2: 'react-dnd',
-    amd: 'react-dnd',
-    root: 'ReactDnD',
-  },
-  'react-dnd-html5-backend': {
-    commonjs: 'react-dnd-html5-backend',
-    commonjs2: 'react-dnd-html5-backend',
-    amd: 'react-dnd-html5-backend',
-    root: 'ReactDnDHTML5Backend',
-  },
-  'react-dnd-touch-backend': {
-    commonjs: 'react-dnd-touch-backend',
-    commonjs2: 'react-dnd-touch-backend',
-    amd: 'react-dnd-touch-backend',
-    root: 'ReactDnDTouchBackend',
-  },
-};
 
 // Export a function. Accept the base config as the only param.
 module.exports = {
@@ -115,8 +23,6 @@ module.exports = {
 
     // // Return the altered config
     // return result;
-
-    config.externals = COMMON_EXTERNALS;
 
     // 获取原来定义的变量
     let definePluginId = config.plugins.findIndex(
