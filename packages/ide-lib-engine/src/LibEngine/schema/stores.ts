@@ -6,7 +6,8 @@ import {
   types,
   Instance,
   SnapshotOrInstance,
-  IAnyModelType
+  IAnyModelType,
+  getSnapshot
 } from 'mobx-state-tree';
 import {
   TAnyMSTModel,

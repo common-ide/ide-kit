@@ -20,6 +20,8 @@ import {
   IBaseComponentProps
 } from 'ide-lib-base-component';
 
+import {types, getSnapshot} from 'mobx-state-tree';
+
 import { debugRender } from '../lib/debug';
 import { createApp } from './controller/index';
 import { StoresFactory, getStoresModelCache } from './schema/stores';
@@ -319,6 +321,8 @@ export const initSuits: <Props extends IBaseComponentProps, ISubMap>(
     ) => {
       const { ...otherProps } = props;
       const { model } = stores as any;
+
+      // 从 controlledKeys 列表中获取受控属性
       const controlledProps = pick(model, controlledKeys);
       debugRender(`[${(stores as any).id}] rendering`);
 

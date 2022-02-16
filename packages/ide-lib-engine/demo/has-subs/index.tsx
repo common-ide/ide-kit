@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import { Button, Input } from 'antd';
-import { IBaseTheme, IBaseComponentProps } from 'ide-lib-base-component';
+import { IBaseTheme, IBaseComponentProps, EMPTY_JSON_SNAPSHOT } from 'ide-lib-base-component';
 
 import { TComponentCurrying } from '../../src';
 
@@ -24,6 +24,8 @@ export interface IAttributeEditorProps {
   pageStore?: any;
   formData?: any;
   schema?: any;
+  _formData?: any;
+  _schema?: any;
 }
 
 export interface IHeaderBlockTheme extends IBaseTheme {
@@ -56,8 +58,7 @@ export const DEFAULT_PROPS: IHeaderBlockProps = {
     main: '#25ab68'
   },
   propsEditor: {
-    formData: { c: 2 },
-    schema: {text: 1}
+    formData: {'hello': 'world'}
   },
   headerBar: {
     buttons: [

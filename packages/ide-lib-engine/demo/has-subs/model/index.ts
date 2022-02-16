@@ -20,7 +20,6 @@ export const modelExtends = (model: IAnyModelType) => {
             }
           }
         }
-        // console.log(444, self.propsEditor.formData, self.propsEditor.schema);
       }
     };
   });
