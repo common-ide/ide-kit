@@ -25,6 +25,11 @@
   "keywords": [],
   "author": "boycgit",
   "license": "MIT",
+  "standard-version": {
+    "skip": {
+      "tag": true
+    }
+  },
   "dependencies": {
     "ide-lib-utils": "^1.0.0",
     "ide-model-utils": "^1.0.0",
