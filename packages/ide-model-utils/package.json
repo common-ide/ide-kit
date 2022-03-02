@@ -1,6 +1,6 @@
 {
   "name": "ide-model-utils",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "mst model for ide",
   "main": "dist/index.umd.js",
   "module": "src/index.tsx",
