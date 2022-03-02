@@ -1,22 +1,22 @@
 {
-  "name": "ide-lib-utils",
-  "version": "1.0.0",
-  "description": "[lib] utils for ide",
+  "name": "ide-model-utils",
+  "version": "0.1.1",
+  "description": "mst model for ide",
   "main": "dist/index.umd.js",
   "module": "src/index.tsx",
   "idebug": "src/index.tsx",
   "typings": "dist/index.d.ts",
   "sideEffects": false,
-  "homepage": "",
+  "homepage": "https://one-gourd.github.io/ide-model-utils",
   "repository": {
     "type": "git",
-    "url": "https://github.com/common-ide/ide-kit/tree/master/packages/ide-lib-utils"
+    "url": ""
   },
   "scripts": {
     "dev": "ide-cli dev",
     "install:peers": "ide-cli install --use tnpm",
     "install:all": "tnpm install && npm run install:peers",
-    "test": "./node_modules/.bin/jest",
+    "test": "jest",
     "release": "npx standard-version",
     "build": "ide-cli build",
     "pregh-pages": "node ./node-helper/download-code-worker.js",
@@ -25,13 +25,8 @@
   "keywords": [],
   "author": "boycgit",
   "license": "MIT",
-  "devDependencies": {},
   "dependencies": {
-    "aa-loader": "0.1.x",
-    "advance-json-merge": "1.x.x",
-    "debug": "^4.1.0",
-    "mitt": "^1.2.0",
-    "ts-debounce-throttle": "1.x.x"
+    "ide-lib-utils": "^1.0.0"
   },
   "files": [
     "dist"

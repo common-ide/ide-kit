@@ -11,6 +11,9 @@
             ],
             "ide-lib-engine": [
               "ide-lib-engine/src"
+            ],
+            "ide-model-utils": [
+              "ide-model-utils/src"
             ]
         }
     }

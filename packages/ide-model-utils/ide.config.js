@@ -1,12 +1,13 @@
 const { extraLibs } = require('../../config-files/util');
 module.exports = {
-  name: 'ide-lib-engine',
-  debugName: 'lib-engine',
-  className: 'LibEngine',
+  name: 'ide-model-utils',
+  debugName: 'model-utils',
+  className: 'ModelUtils',
   templater: 'https://github.com/common-ide/ide-tpl-component-for-monorepo.git',
-  idPrefix: 'sle',
+  idPrefix: 'imu',
+  hasSubComponents: false,
+  libName: 'ideModelUtils',
   configFileName: 'tsconfig.build.json',
-  libName: 'ideLibEngine',
   extraLibs,
   externals: [],
 };

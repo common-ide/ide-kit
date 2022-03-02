@@ -1,0 +1,14 @@
+{
+  "name": "ide-model-utils",
+  "debugName": "model-utils",
+  "className": "ModelUtils",
+  "templater": "https://github.com/common-ide/ide-tpl-component-for-monorepo.git",
+  "homepage": "https://one-gourd.github.io/ide-model-utils",
+  "idPrefix": "imu",
+  "version": "1.0.0",
+  "description": "mst model for ide",
+  "configFileName": "tsconfig.build.json",
+  "hasSubComponents": false,
+  "author": "boycgit",
+  "libName": "ideModelUtils"
+}

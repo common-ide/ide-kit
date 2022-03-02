@@ -4,6 +4,9 @@ module.exports = {
   },
   cacheDirectory: '.jest-cache',
   coverageDirectory: '.jest-coverage',
+  moduleNameMapper: {
+    'ide-(.*)': '<rootDir>/packages/ide-$1/src'
+  },
   // verbose: true,
   collectCoverage: false,
   coverageDirectory: '<rootDir>/coverage/',
@@ -14,6 +17,6 @@ module.exports = {
   transformIgnorePatterns: [], // 不能忽略
   globals: {
     window: {},
-    __VERSION__: ''
+    __VERSION__: '',
   },
 };
