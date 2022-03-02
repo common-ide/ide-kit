@@ -5433,6 +5433,11 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
+circular-dependency-plugin@^5.2.2:
+  version "5.2.2"
+  resolved "https://registry.npm.alibaba-inc.com/circular-dependency-plugin/download/circular-dependency-plugin-5.2.2.tgz#39e836079db1d3cf2f988dc48c5188a44058b600"
+  integrity sha1-Oeg2B52x088vmI3EjFGIpEBYtgA=
+
 cjs-module-lexer@^1.0.0:
   version "1.2.2"
   resolved "https://registry.nlark.com/cjs-module-lexer/download/cjs-module-lexer-1.2.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcjs-module-lexer%2Fdownload%2Fcjs-module-lexer-1.2.2.tgz#9f84ba3244a512f3a54e5277e8eef4c489864e40"
@@ -14309,12 +14314,35 @@ ss-comparator@^1.0.0:
   dependencies:
     ss-linked-list "^1.1.2"
 
-ss-linked-list@^1.1.2:
+ss-linked-list@^1.1.1, ss-linked-list@^1.1.2:
   version "1.1.5"
   resolved "https://registry.npmmirror.com/ss-linked-list/download/ss-linked-list-1.1.5.tgz#1e632761c46f3c48a35dda328261e1907882e00d"
   integrity sha1-HmMnYcRvPEijXdoygmHhkHiC4A0=
   dependencies:
     ss-comparator "^1.0.0"
+
+ss-queue@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.npm.alibaba-inc.com/ss-queue/download/ss-queue-1.0.5.tgz#58450dcfa7dd8374fd5e8c6c97530664ff544001"
+  integrity sha1-WEUNz6fdg3T9Xoxsl1MGZP9UQAE=
+  dependencies:
+    ss-linked-list "^1.1.1"
+
+ss-stack@^1.0.7:
+  version "1.0.8"
+  resolved "https://registry.npm.alibaba-inc.com/ss-stack/download/ss-stack-1.0.8.tgz#b4e82c68edc433e60a363010bfc2b9d791d76362"
+  integrity sha1-tOgsaO3EM+YKNjAQv8K515HXY2I=
+  dependencies:
+    ss-linked-list "^1.1.2"
+
+ss-tree@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.npm.alibaba-inc.com/ss-tree/download/ss-tree-1.0.5.tgz#58f63d4139f000ded3b0e6cd9821c93806d245e8"
+  integrity sha1-WPY9QTnwAN7TsObNmCHJOAbSReg=
+  dependencies:
+    ss-comparator "^1.0.0"
+    ss-queue "^1.0.5"
+    ss-stack "^1.0.7"
 
 sshpk@^1.7.0:
   version "1.16.1"

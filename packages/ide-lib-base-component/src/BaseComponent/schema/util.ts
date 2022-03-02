@@ -35,10 +35,13 @@ export const updateInScope = (valueSet: string[]) => (
 // export const updateModelAttribute = updateInScope(EDITABLE_ATTRIBUTE);
 
 /* ----------------------------------------------------
-  初始化 JSON Model 
+  初始化 JSON Model
 ----------------------------------------------------- */
 export function createJSONInstance(obj: string | object): IJSONModel {
   const model = JSONModel.create({});
   model.setValue(obj);
   return model;
 }
+
+export const EMPTY_JSON_INSTANCE = createJSONInstance({});
+export const EMPTY_JSON_SNAPSHOT = (EMPTY_JSON_INSTANCE as any).toJSON();

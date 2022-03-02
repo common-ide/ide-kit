@@ -1,4 +1,4 @@
-
+const CircularDependencyPlugin = require('circular-dependency-plugin');
 
 // Export a function. Accept the base config as the only param.
 module.exports = {
@@ -39,6 +39,29 @@ module.exports = {
     const originTSPlugins = config.module.rules[0].use[0].options.plugins;
     // 将 reflect-meta 插件注入，不然会报错：https://stackoverflow.com/questions/52557878/babel-7-inversify-4-webpack-4-unexpected-character-on-inject
     originTSPlugins.unshift('babel-plugin-transform-typescript-metadata');
+
+    config.plugins.push(
+      new CircularDependencyPlugin({
+        onStart({ compilation }) {
+          console.log('---start detecting webpack modules cycles--');
+        },
+        // `onEnd` is called before the cycle detection ends
+        onEnd({ compilation }) {
+          console.log('---end detecting webpack modules cycles---');
+        },
+        // exclude detection of files based on a RegExp
+        exclude: /node_modules/,
+        // include specific files based on a RegExp
+        include: /packages/,
+        // add errors to webpack instead of warnings
+        failOnError: false,
+        // allow import cycles that include an asyncronous import,
+        // e.g. via import(/* webpackMode: "weak" */ './file.js')
+        allowAsyncCycles: false,
+        // set the current working directory for displaying module paths
+        cwd: process.cwd(),
+      }),
+    );
 
     return config;
   },

@@ -1,0 +1,48 @@
+{
+  "name": "ide-model-tree",
+  "version": "0.1.3",
+  "description": "tree mst model",
+  "main": "dist/index.umd.js",
+  "module": "src/index.tsx",
+  "idebug": "src/index.tsx",
+  "typings": "dist/index.d.ts",
+  "sideEffects": false,
+  "homepage": "https://one-gourd.github.io/ide-model-tree",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/one-gourd/ide-model-tree.git"
+  },
+  "scripts": {
+    "dev": "ide-cli dev",
+    "install:peers": "ide-cli install --use tnpm",
+    "install:all": "tnpm install && npm run install:peers",
+    "test": "./node_modules/.bin/jest",
+    "release": "npx standard-version",
+    "build": "ide-cli build",
+    "pregh-pages": "node ./node-helper/download-code-worker.js",
+    "gh-pages": "webpack --config webpack.gh-pages.js && npx gh-pages -d public"
+  },
+  "keywords": [],
+  "author": "boycgit",
+  "license": "MIT",
+  "dependencies": {
+    "ide-lib-utils": "^1.0.0",
+    "ide-model-utils": "^1.0.0",
+    "ss-tree": "^1.0.5"
+  },
+  "files": [
+    "dist"
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

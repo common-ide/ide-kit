@@ -17,6 +17,8 @@ yarn  pre-dev
 也可以直接仅仅只针对某个组件进行本地 dev 预览： `lerna run dev --scope=ide-lib-utils`
 > 也可以直接 `cd ./packages/ide-lib-utils` ，然后执行 `yarn dev`
 
+如果要针对某个组件运行测试用例，执行：`yarn test --scope=ide-lib-utils`
+
 ## 如何添加组件
 
  1. 在 config-files 文件中创建配置文件，比如 "ide-lib-utils.json"

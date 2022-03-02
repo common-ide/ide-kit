@@ -1,0 +1,15 @@
+{
+  "name": "ide-model-tree",
+  "debugName": "model-tree",
+  "className": "ModelTree",
+  "repo": "https://github.com/one-gourd/ide-model-tree.git",
+  "templater": "https://github.com/common-ide/ide-tpl-component-for-monorepo.git",
+  "homepage": "https://one-gourd.github.io/ide-model-tree",
+  "idPrefix": "imt",
+  "version": "0.1.2",
+  "description": "tree mst model",
+  "configFileName": "tsconfig.build.json",
+  "hasSubComponents": false,
+  "author": "boycgit",
+  "libName": "ideModelTree"
+}
