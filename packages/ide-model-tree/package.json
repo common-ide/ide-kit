@@ -1,6 +1,6 @@
 {
   "name": "ide-model-tree",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "description": "tree mst model",
   "main": "dist/index.umd.js",
   "module": "src/index.tsx",
