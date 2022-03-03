@@ -17,6 +17,9 @@
             ],
             "ide-model-tree": [
               "ide-model-tree/src"
+            ],
+            "ide-model-model": [
+              "ide-model-model/src"
             ]
         }
     }

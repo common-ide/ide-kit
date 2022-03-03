@@ -1,0 +1,15 @@
+{
+  "name": "ide-model-graph",
+  "debugName": "model-graph",
+  "className": "ModelGraph",
+  "repo": "https://github.com/one-gourd/ide-model-graph.git",
+  "templater": "https://github.com/common-ide/ide-tpl-component-for-monorepo.git",
+  "homepage": "https://one-gourd.github.io/ide-model-graph",
+  "idPrefix": "img",
+  "version": "0.1.6",
+  "description": "graph mst model",
+  "hasSubComponents": false,
+  "author": "boycgit",
+  "libName": "ideModelGraph",
+  "configFileName": "tsconfig.build.json"
+}
