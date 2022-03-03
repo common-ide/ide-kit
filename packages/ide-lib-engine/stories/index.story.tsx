@@ -10,6 +10,14 @@ import {
 } from '../demo/simple/main';
 import { Client } from 'ette';
 
+import {
+  HeaderBlock,
+  HeaderBlockModel,
+  HeaderBlockFactory,
+  HeaderBlockStoresModel,
+  IHeaderBlockProps
+} from '../demo/has-subs/main';
+
 
 const {
   ComponentWithStore: LibEngineWithStore,
@@ -49,6 +57,10 @@ export const Simple = () => {
 export const WithStore = () => {
   return  <LibEngineWithStore onClick={onClickWithStore(client, true)} />
 }
+
+// export const HasSub = () => {
+//   return <HeaderBlock {...props} onClick={onClick} />
+// }
 
 export default {
   component: LibEngine,
