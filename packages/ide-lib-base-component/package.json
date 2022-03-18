@@ -25,9 +25,9 @@
   "keywords": [],
   "author": "boycgit",
   "license": "MIT",
-  "devDependencies": {},
   "dependencies": {
-    "@rehooks/component-size": "^1.0.3"
+    "@rehooks/component-size": "^1.0.3",
+    "ide-lib-utils": "^1.0.0"
   },
   "files": [
     "dist"
