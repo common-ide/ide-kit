@@ -22,6 +22,11 @@
     "pregh-pages": "node ./node-helper/download-code-worker.js",
     "gh-pages": "webpack --config webpack.gh-pages.js && npx gh-pages -d public"
   },
+  "standard-version": {
+    "skip": {
+      "tag": true
+    }
+  },
   "keywords": [],
   "author": "boycgit",
   "license": "MIT",
